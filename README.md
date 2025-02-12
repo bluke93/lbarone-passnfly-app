@@ -1,25 +1,60 @@
-# Vue Store Locator app
+# Vue Store Locator App
 
-(Mapbox study)
+This project is a **study project** designed to explore and experiment with the functionalities of **Mapbox**. The goal was to understand how Mapbox can be integrated into a Vue 2 / Nuxt 2 application, specifically for implementing map-based features like store locators, which can be seen in the two demo examples.
 
-Nuxtjs (vue) app using vuex and mapbox to handle a store locator app.
-In this case manages the list of airports and allows to navigate the map and the list with mapbox apis.
+The app uses **Vuex** to manage a list of airports and demonstrates the interaction between the map and the list of locations via **Mapbox APIs**.
 
+## Features
 
+- Displays a list of airports.
+- Interactive map using **Mapbox** to show airport locations.
+- **Vuex** for state management across the app.
+- Easy navigation through a list of airports and their locations on the map.
+- Can add, edit and remove airports.
 
-## run development
+## Demos
 
-- Node 10
+Here are two live demos showcasing similar store locator functionalities:
 
-```bash
-# uses node 10
-$ nvm use 10
-```
+- **[Credit Agricole Conti Store Locator](https://www.credit-agricole.it/apri-il-conto/scegli-filiale?account_type=ONL)** - Find the nearest branch locations for opening an online account.
+- **[Remax Property Search Map](https://www.remax.it/trova/ricerca/vendita?agency_group_id&agency_id&agent_id&bathrooms&collection&commercial&energy_class[]=1&energy_class[]=8&lifestyle&location&location_type&order=sell_price-desc&price&program&rooms&size&unit_type_id=1&yard_id)** - A property search map for listings in the real estate market.
 
-```bash
-# install dependencies
-$ yarn install
+## Tech Stack
 
-# serve with hot reload at localhost:3000
-$ yarn dev
-```
+- **Nuxt.js 2** (Vue 2) for server-side rendering and routing.
+- **Vuex** for state management.
+- **Mapbox API** for interactive maps and geolocation.
+
+## Prerequisites
+
+- **Node.js 10** or higher
+- **Yarn** as the package manager
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/bluke93/vue-store-locator.git
+   cd vue-store-locator
+   ```
+
+2. Install dependencies:
+   ```bash
+   yarn install
+   ```
+
+3. Set Node 10 as the version if you're using **nvm**:
+   ```bash
+   nvm use 10
+   ```
+
+## Development
+
+To run the app locally in development mode:
+
+1. Start the development server with hot reloading:
+   ```bash
+   yarn dev
+   ```
+
+2. The app will be available at `http://localhost:3000` in your browser.
